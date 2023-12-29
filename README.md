@@ -1,8 +1,7 @@
-# Interviews SQL Question From [HackerRank](https://www.hackerrank.com/)
+# **Interviews SQL Question From [HackerRank](https://www.hackerrank.com/)**
 
-## Overview
-
-solving a challenging SQL question from **HackerRank**, specifically focusing on the **[Interviews]**(https://www.hackerrank.com/challenges/interviews/problem) problem. The task is to extract valuable insights from interview data, including contest details and hacker statistics, by aggregating and summarizing various metrics.
+## 📝 **Overview**
+solving a challenging SQL question from **HackerRank**, specifically focusing on the [Interviews](https://www.hackerrank.com/challenges/interviews/problem) problem. The task is to extract valuable insights from interview data, including contest details and hacker statistics, by aggregating and summarizing various metrics.
 
 - **Solution File:**
     - [Solution.sql](Solution.sql) - Contains the SQL code addressing the problem statement.
@@ -12,11 +11,11 @@ solving a challenging SQL question from **HackerRank**, specifically focusing on
     - [Data](Data) - Folder containing data extracted from the HackerRank website.
 
 
-## Problem Description
+## 🤔 **Problem Description**
 
 The problem requires printing contest-related information, such as `contest_id`, `hacker_id`, `name`, and aggregated metrics like `total_submissions`, `total_accepted_submissions`, `total_views`, and `total_unique_views`. The goal is to present this data in a structured manner, sorted by `contest_id`, while excluding contests with all four aggregated metrics being zero.
 
-## Solution Overview
+## 🧠 **Solution Overview**
 
 The solution involves a multi-step SQL query. It utilizes common table expressions (CTEs) to calculate the sums of submissions and views separately. These CTEs are then joined with the main "Contests" table to obtain the final result. The `WHERE` clause ensures that contests with all four sums as zero are excluded from the output.
 
@@ -56,12 +55,11 @@ WHERE
 ORDER BY con.contest_id;
 ```
 
-## Data Transformation Process
+## 🛠️ **Data Transformation Process**
 1. The data from the HackerRank website was extracted and copied into Excel for further processing.
 2. Within Excel, the **"Text to Columns"** feature was employed to structure the data appropriately.
 3. The transformed data was then imported into MySQL using the MySQL **Table Data Import Wizard**
 
-## Key Takeaways
+## 🗝️ **Key Takeaways**
 - The solution leverages SQL skills to address a complex problem, showcasing proficiency in database querying.
 - Effective use of CTEs enhances code readability and maintainability.
-
