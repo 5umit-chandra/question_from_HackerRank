@@ -5,11 +5,11 @@
 solving a challenging SQL question from **HackerRank**, specifically focusing on the **[Interviews](https://www.hackerrank.com/challenges/interviews/problem)** problem. The task is to extract valuable insights from interview data, including contest details and hacker statistics, by aggregating and summarizing various metrics.
 
 - **Solution File:**
-  - [Solution.sql](Solution.sql) - Contains the SQL code addressing the problem statement.
+    [Solution.sql](Solution.sql) - Contains the SQL code addressing the problem statement.
 
 - **Data Files and Folders:**
-    1. [Interviews.pdf](question_interviews.pdf) - PDF file containing the HackerRank question.
-    2. [Data](Data) - Folder containing data extracted from the HackerRank website.
+    [Interviews.pdf](question_interviews.pdf) - PDF file containing the HackerRank question.
+    [Data](Data) - Folder containing data extracted from the HackerRank website.
 
 
 ## Problem Description
