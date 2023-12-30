@@ -18,7 +18,7 @@ The problem requires printing contest-related information, such as `contest_id`,
 
 ## 🧠 **Solution Overview**
 
-The solution involves a multi-step SQL query. It utilizes common table expressions (CTEs) to calculate the sums of submissions and views separately. These CTEs are then joined with the main "Contests" table to obtain the final result. The `WHERE` clause ensures that contests with all four sums as zero are excluded from the output.
+The solution involves a multi-step SQL query. It utilizes common table expressions (CTEs) to calculate the sums of submissions and views separately. These CTEs are then joined with the main "`Contests`" table to obtain the final result. The `WHERE` clause ensures that contests with all four sums as zero are excluded from the output.
 
 The solution file, named [Solution.sql](Solution.sql),contains the SQL code addressing the problem statement.
 
@@ -55,9 +55,14 @@ WHERE
     OR tov.t_uq_view > 0
 ORDER BY con.contest_id;
 ```
+#### **Explanation:**
+- We're organizing data into two parts: one for counting submissions and another for counting views.
+- Then, we join these results with the main contest data.
+- The final query ensures we only show contests with some meaningful activity (submissions or views).
+- Results are sorted by contest ID for clarity.
 
 ## 🛠️ **Data Transformation Process**
-1. The data from the HackerRank website was extracted and copied into Excel for further processing.
+1. The data from the HackerRank website was extracted and copied into Excel.
 2. Within Excel, the **"Text to Columns"** feature was employed to structure the data appropriately.
 3. The transformed data was then imported into MySQL using the MySQL **Table Data Import Wizard**
 
