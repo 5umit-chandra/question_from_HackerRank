@@ -1,4 +1,4 @@
-# **Interviews SQL Question From [HackerRank](https://www.hackerrank.com/challenges/interviews/problem)**
+# ** SQL Question From [HackerRank](https://www.hackerrank.com/challenges/interviews/problem) (Interviews)**
 
 ## 📝 **Overview**
 solving a challenging SQL question from **[HackerRank](https://www.hackerrank.com/)**, specifically focusing on the **[Interviews](https://www.hackerrank.com/challenges/interviews/problem)** problem. The task is to extract valuable insights from interview data, including contest details and hacker statistics, by aggregating and summarizing various metrics.
