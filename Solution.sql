@@ -1,3 +1,4 @@
+USE interviews ;
 
 WITH total_sub AS (
     SELECT
@@ -34,8 +35,8 @@ FROM
 INNER JOIN total_sub AS tos ON con.contest_id = tos.contest_id
 INNER JOIN total_view AS tov ON con.contest_id = tov.contest_id
 WHERE
-		tos.t_sub		> 0
+		tos.t_sub > 0
     OR	tos.t_ac_sub > 0
-    OR 	tov.t_view	> 0
-    OR	 tov.t_uq_view> 0
+    OR 	tov.t_view > 0
+    OR	 tov.t_uq_view > 0
 ORDER BY con.contest_id;
